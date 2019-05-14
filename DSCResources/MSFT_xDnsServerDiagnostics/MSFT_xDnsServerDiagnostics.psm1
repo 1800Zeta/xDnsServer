@@ -1,16 +1,5 @@
 Import-Module $PSScriptRoot\..\Helper.psm1 -Verbose:$false
 
-data LocalizedData
-{
-    ConvertFrom-StringData -StringData @'
-NotInDesiredState="{0}" not in desired state. Expected: "{1}" Actual: "{2}".
-DnsClassNotFound=MicrosoftDNS_Server class not found. DNS role is not installed.
-ParameterExpectedNull={0} expected to be NULL nut is not.
-GettingDnsServerDiagnostics=Getting DNS Server Diagnostics.
-SetDnsDiagnosticsSetting=Setting Dns Diagnostics '{0}' to value '{1}'.
-'@
-}
-
 function Get-TargetResource
 {
     [CmdletBinding()]

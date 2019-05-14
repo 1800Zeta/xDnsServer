@@ -158,7 +158,7 @@ try
 
             Context 'Error handling' {
                 It 'Test throws when DnsServerDiagnostics is not found' {
-                    $mockThrow = @{Exception = @{Message = 'What to put here???'}}
+                    $mockThrow = @{Exception = @{Message = 'Invalid Class'}}
                     Mock Get-DnsServerDiagnostics -MockWith {throw $mockThrow}
 
                     {Get-TargetResource -Name 'xDnsServerSetting_Integration'} | should throw

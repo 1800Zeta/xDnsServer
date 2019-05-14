@@ -162,9 +162,9 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 * **XfrConnectTimeout**: Time, in seconds, the DNS Server waits for a successful TCP connection to a remote server when attempting a zone transfer.
 * **DsAvailable**: Indicates whether there is an available DS on the DNS Server. This is a read-only property.
 
-### xDnsServerSetting
+### xDnsServerDiagnostics
 
-* **Name**: Key for the resource.  It doesn't matter what it is as long as it's unique within the configuration.
+* **Name**: Key for the resource. It doesn't matter what it is as long as it's unique within the configuration.
 * **Answers**: Specifies whether to enable the logging of DNS responses.
 * **NaEnableLogFileRolloverme**: Specifies whether to enable log file rollover.
 * **EnableLoggingForLocalLookupEvent**: Specifies whether the DNS server logs local lookup events.

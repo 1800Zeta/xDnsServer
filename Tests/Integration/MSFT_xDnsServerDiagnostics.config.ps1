@@ -1,6 +1,6 @@
 
 $testParameters = @{
-    Name                                 = 'xDnsServerSetting_Integration'
+    Name                                 = 'xDnsServerDiagnostics_Integration'
     Answers                              = $true
     EnableLogFileRollover                = $true
     EnableLoggingForLocalLookupEvent     = $true
